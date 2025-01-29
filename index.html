@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>SzeneMagazin</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <meta content="" name="keywords" />
+        <meta content="" name="description" />
+
+        <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Saira:wght@500;600;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Icon Font Stylesheet -->
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+            rel="stylesheet"
+        />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+            rel="stylesheet"
+        />
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet" />
+        <link
+            href="lib/owlcarousel/assets/owl.carousel.min.css"
+            rel="stylesheet"
+        />
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet" />
+
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/intl-tel-input@25.2.0/build/css/intlTelInput.css"
+        />
+        <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@25.2.0/build/js/intlTelInput.min.js"></script>
+    </head>
+
+    <body>
+        <!-- Spinner Start -->
+        <div
+            id="spinner"
+            class="show position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+        >
+            <div class="spinner-grow text-primary" role="status"></div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- Navbar Start -->
+        <div class="container-fluid bg-primary">
+            <div class="container">
+                <nav class="navbar navbar-dark navbar-expand-lg py-0">
+                    <a href="index.html" class="navbar-brand">
+                        <h1 class="text-white fw-bold d-block">SzeneMagazin</h1>
+                    </a>
+                    <button
+                        type="button"
+                        class="navbar-toggler me-0"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarCollapse"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div
+                        class="collapse navbar-collapse bg-transparent"
+                        id="navbarCollapse"
+                    >
+                        <div class="navbar-nav ms-auto mx-xl-auto p-0">
+                            <a
+                                href="index.html"
+                                class="nav-item nav-link active text-secondary"
+                                >Startseite</a
+                            >
+                            <a href="about.html" class="nav-item nav-link"
+                                >Über uns</a
+                            >
+                            <a href="catalog.html" class="nav-item nav-link"
+                                >Katalog</a
+                            >
+                            <a href="contact.html" class="nav-item nav-link"
+                                >Kontakt</a
+                            >
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Navbar End -->
+
+        <!-- Carousel Start -->
+        <div class="container-fluid px-0">
+            <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <img
+                            style="width: 100%"
+                            src="img/carousel-1.jpg"
+                            class="img-fluid"
+                            alt="Erste Folie"
+                        />
+                        <div class="carousel-caption">
+                            <div class="carousel-content">
+                                <h6 class="text-secondary h4 animated fadeInUp">
+                                    Entdecken Sie die Welt der Kunst in
+                                    Deutschland
+                                </h6>
+                                <h1
+                                    class="text-white display-1 mb-4 animated fadeInRight"
+                                >
+                                    Aktuelle Trends in Kunst, Sport und Kultur
+                                    in Deutschland
+                                </h1>
+                                <p
+                                    class="mb-4 text-white fs-5 animated fadeInDown"
+                                >
+                                    Erfahren Sie mehr über die neuesten
+                                    Ausstellungen, Künstler und Events, die die
+                                    Kunst-, Sport- und Kulturlandschaft in
+                                    Deutschland prägen.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Carousel End -->
+
+        <!-- Features Start -->
+        <div class="container-fluid py-5 my-5">
+            <div class="container pt-5">
+                <div class="row g-5">
+                    <div
+                        class="col-lg-5 col-md-6 col-sm-12 wow fadeIn"
+                        data-wow-delay=".3s"
+                    >
+                        <div class="h-100 position-relative">
+                            <img
+                                style="object-fit: cover"
+                                src="img/features-1.jpg"
+                                class="img-fluid rounded"
+                                alt=""
+                                style="width: 100%; height: 100%"
+                            />
+                        </div>
+                    </div>
+                    <div
+                        class="col-lg-7 col-md-6 col-sm-12 wow fadeIn"
+                        data-wow-delay=".5s"
+                    >
+                        <h5 class="text-primary">
+                            Strategische Vision in der Kunstwelt
+                        </h5>
+                        <h1 class="mb-4">
+                            Förderung von Talent und Kreativität in Deutschland
+                        </h1>
+                        <p>
+                            Unser Ansatz zur Kunst basiert auf einer
+                            strategischen Vision, die Kreativität, Innovation
+                            und Talent deutscher Künstler wertschätzt. Indem wir
+                            uns auf die lokale Kultur konzentrieren, schaffen
+                            wir eine solide Grundlage für langfristigen Erfolg
+                            im künstlerischen Bereich.
+                        </p>
+                        <p class="mb-4">
+                            Wir glauben an die transformative Kraft der Kunst
+                            als Motor für kulturelle Entwicklung. Unser Ziel ist
+                            es, Künstlern und Kulturschaffenden die notwendigen
+                            Ressourcen bereitzustellen, um sich in der globalen
+                            Kunstszene zu etablieren. Unsere Strategie ist
+                            ganzheitlich und auf nachhaltige Kulturprojekte
+                            ausgerichtet.
+                        </p>
+                    </div>
+                </div>
+                <div
+                    class="row g-5"
+                    style="flex-direction: row-reverse; margin-top: 50px"
+                >
+                    <div
+                        class="col-lg-5 col-md-6 col-sm-12 wow fadeIn"
+                        data-wow-delay=".3s"
+                    >
+                        <div class="h-100 position-relative">
+                            <img
+                                style="object-fit: cover"
+                                src="img/features-2.jpg"
+                                class="img-fluid rounded"
+                                alt=""
+                                style="width: 100%; height: 100%"
+                            />
+                        </div>
+                    </div>
+                    <div
+                        class="col-lg-7 col-md-6 col-sm-12 wow fadeIn"
+                        data-wow-delay=".5s"
+                    >
+                        <h5 class="text-primary">Innovative Kulturplanung</h5>
+                        <h1 class="mb-4">
+                            Die Zukunft von Kunst und Sport gestalten
+                        </h1>
+                        <p>
+                            Im Mittelpunkt unseres Ansatzes steht eine
+                            innovative Kulturplanung, die den hohen Stellenwert
+                            von Kunst und Sport für eine vielfältige
+                            Gesellschaft erkennt. Kunst ist nicht nur Ausdruck,
+                            sondern auch ein Schlüssel zur Entwicklung
+                            nachhaltiger Kulturprojekte.
+                        </p>
+                        <p class="mb-4">
+                            Unser Ziel ist es, moderne Techniken mit
+                            traditionellen Methoden zu verbinden, um ein
+                            ausgewogenes und vielfältiges Kulturangebot zu
+                            schaffen. Durch langfristige Planung und gezieltes
+                            Risikomanagement unterstützen wir Kulturschaffende
+                            dabei, in einer sich wandelnden Welt erfolgreich zu
+                            sein.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Features End -->
+
+        <!-- Project Start -->
+        <div class="container-fluid project py-5 my-5">
+            <div class="container py-5">
+                <div
+                    class="text-center mx-auto pb-5 wow fadeIn"
+                    data-wow-delay=".3s"
+                    style="max-width: 600px"
+                >
+                    <h5 class="text-primary">
+                        Transformative Projekte in Kunst, Sport und Kultur
+                    </h5>
+                    <h1>Kultur stärken durch strategische Initiativen</h1>
+                    <p>
+                        Unser Projektportfolio spiegelt eine kühne Vision für
+                        die Zukunft von Kunst, Sport und Kultur wider. Jedes
+                        Projekt ist darauf ausgerichtet, das kulturelle
+                        Potenzial durch innovative Konzepte zu fördern. Unser
+                        Fokus liegt auf nachhaltigen und inspirierenden
+                        Projekten, die das deutsche Kulturleben bereichern.
+                    </p>
+                </div>
+                <div class="row g-5">
+                    <div
+                        class="col-md-4 col-lg-4 wow fadeIn"
+                        data-wow-delay=".3s"
+                    >
+                        <div class="project-item">
+                            <div class="project-img">
+                                <img
+                                    src="img/project-1.jpg"
+                                    class="img-fluid w-100 rounded"
+                                    alt=""
+                                />
+                                <div class="project-content">
+                                    <a class="text-center">
+                                        <h4 class="text-secondary">
+                                            Entwicklung kultureller Projekte
+                                        </h4>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-md-4 col-lg-4 wow fadeIn"
+                        data-wow-delay=".5s"
+                    >
+                        <div class="project-item">
+                            <div class="project-img">
+                                <img
+                                    src="img/project-2.jpg"
+                                    class="img-fluid w-100 rounded"
+                                    alt=""
+                                />
+                                <div class="project-content">
+                                    <a class="text-center">
+                                        <h4 class="text-secondary">
+                                            Kulturelle Erkundungsinitiativen
+                                        </h4>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-md-4 col-lg-4 wow fadeIn"
+                        data-wow-delay=".7s"
+                    >
+                        <div class="project-item">
+                            <div class="project-img">
+                                <img
+                                    src="img/project-3.jpg"
+                                    class="img-fluid w-100 rounded"
+                                    alt=""
+                                />
+                                <div class="project-content">
+                                    <a class="text-center">
+                                        <h4 class="text-secondary">
+                                            Förderung zeitgenössischer Kunst
+                                        </h4>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Project End -->
+
+        <!-- Blog Start -->
+        <div class="container-fluid blog py-5 mb-5">
+            <div class="container">
+                <div
+                    class="text-center mx-auto pb-5 wow fadeIn"
+                    data-wow-delay=".3s"
+                    style="max-width: 600px"
+                >
+                    <h5 class="text-primary">
+                        Die Zukunft von Kunst, Sport und Kultur gestalten
+                    </h5>
+                    <h1>
+                        Perspektiven und Strategien für nachhaltiges kulturelles
+                        Wachstum
+                    </h1>
+                    <p>
+                        Willkommen in unserem aktuellen Blog, in dem wir
+                        innovative Strategien und Perspektiven für den Erfolg in
+                        Kunst, Sport und Kultur in Deutschland beleuchten.
+                        Unsere Artikel befassen sich mit wegweisenden
+                        Prinzipien, die neue Standards in der Kultur- und
+                        Sportbranche setzen. Mit einem Fokus auf die Entwicklung
+                        der deutschen Kulturlandschaft bieten wir das notwendige
+                        Wissen und die Werkzeuge, um eine nachhaltige Zukunft
+                        für Kunst und Kultur zu sichern. Bleiben Sie informiert
+                        und inspiriert mit unseren fesselnden Artikeln, die
+                        Ihnen helfen, stets am Puls des kulturellen Geschehens
+                        zu bleiben.
+                    </p>
+                </div>
+                <div class="row g-5 justify-content-center">
+                    <div
+                        class="col-lg-6 col-xl-6 wow fadeIn"
+                        data-wow-delay=".3s"
+                    >
+                        <div
+                            class="blog-item position-relative bg-light rounded"
+                        >
+                            <img
+                                src="img/blog-1.jpg"
+                                class="img-fluid w-100 rounded-top"
+                                alt=""
+                            />
+                            <span
+                                class="position-absolute px-4 py-3 bg-primary text-white rounded"
+                                style="top: -28px; right: 20px"
+                            >
+                                Kunst
+                            </span>
+                            <div
+                                class="blog-content text-center position-relative px-3"
+                                style="margin-top: 20px"
+                            >
+                                <span class="text-secondary">24 März 2023</span>
+                                <h5 class="mt-4">
+                                    Die strategische Bedeutung zeitgenössischer
+                                    Kunst im Kulturmarkt
+                                </h5>
+                                <p class="py-2">
+                                    Erfahren Sie, wie kulturelle Strategien neue
+                                    Maßstäbe in der deutschen Kunstszene setzen
+                                    und den Weg für nachhaltiges Wachstum im
+                                    Kulturbereich ebnen.
+                                </p>
+                            </div>
+                            <div
+                                class="blog-coment d-flex justify-content-between px-4 py-2 border bg-primary rounded-bottom"
+                            >
+                                <a href="" class="text-white">
+                                    <small
+                                        ><i
+                                            class="fas fa-share me-2 text-secondary"
+                                        ></i
+                                        >24 Teilen</small
+                                    >
+                                </a>
+                                <a href="" class="text-white">
+                                    <small
+                                        ><i
+                                            class="fa fa-comments me-2 text-secondary"
+                                        ></i
+                                        >5 Kommentare</small
+                                    >
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-lg-6 col-xl-6 wow fadeIn"
+                        data-wow-delay=".3s"
+                    >
+                        <div
+                            class="blog-item position-relative bg-light rounded"
+                        >
+                            <img
+                                src="img/blog-6.jpg"
+                                class="img-fluid w-100 rounded-top"
+                                alt=""
+                            />
+                            <span
+                                class="position-absolute px-4 py-3 bg-primary text-white rounded"
+                                style="top: -28px; right: 20px"
+                            >
+                                Sport & Kultur
+                            </span>
+                            <div
+                                class="blog-content text-center position-relative px-3"
+                                style="margin-top: 20px"
+                            >
+                                <span class="text-secondary">04 Mai 2024</span>
+                                <h5 class="mt-4">
+                                    Das Potenzial der deutschen Kultur
+                                    entfesseln
+                                </h5>
+                                <p class="py-2">
+                                    Entdecken Sie die Chancen innerhalb der
+                                    deutschen Kulturlandschaft und erfahren Sie,
+                                    wie sie eine zentrale Rolle für diejenigen
+                                    spielt, die das immense kulturelle Potenzial
+                                    des Landes nutzen möchten.
+                                </p>
+                            </div>
+                            <div
+                                class="blog-coment d-flex justify-content-between px-4 py-2 border bg-primary rounded-bottom"
+                            >
+                                <a href="" class="text-white">
+                                    <small
+                                        ><i
+                                            class="fas fa-share me-2 text-secondary"
+                                        ></i
+                                        >120 Teilen</small
+                                    >
+                                </a>
+                                <a href="" class="text-white">
+                                    <small
+                                        ><i
+                                            class="fa fa-comments me-2 text-secondary"
+                                        ></i
+                                        >70 Kommentare</small
+                                    >
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Blog End -->
+
+        <!-- NEWS Start -->
+        <div class="container-fluid testimonial py-5 my-5">
+            <div class="container py-5">
+                <div
+                    class="text-center mx-auto pb-5 wow fadeIn"
+                    data-wow-delay=".3s"
+                    style="max-width: 600px"
+                >
+                    <h5 class="text-primary">
+                        Nachrichten aus Kunst, Sport und Kultur in Deutschland
+                    </h5>
+                    <h1>
+                        Die neuesten kulturellen und sportlichen Trends in
+                        Deutschland
+                    </h1>
+                    <p>
+                        In diesem Bereich halten wir Sie über die wichtigsten
+                        Entwicklungen in Kunst, Sport und Kultur in Deutschland
+                        auf dem Laufenden. Von den neuesten Kunstausstellungen
+                        bis hin zu bedeutenden Sportereignissen – unser Ziel ist
+                        es, Ihnen einen umfassenden Überblick über die
+                        wichtigsten kulturellen Bewegungen zu bieten. Entdecken
+                        Sie Innovationen in der zeitgenössischen Kunst, Erfolge
+                        im Sport und kulturelle Errungenschaften, die
+                        Deutschland prägen. Hier finden Sie alles, was Sie
+                        wissen müssen, um über die wichtigsten kulturellen und
+                        sportlichen Entwicklungen informiert zu bleiben.
+                    </p>
+                </div>
+                <div
+                    class="owl-carousel testimonial-carousel wow fadeIn"
+                    data-wow-delay=".5s"
+                >
+                    <div class="testimonial-item border p-4">
+                        <div class="d-flex align-items-center">
+                            <img src="img/news-item-1.jpg" alt="" />
+                        </div>
+                        <div class="border-top mt-4 pt-3">
+                            <h4 class="text-secondary">
+                                Zeitgenössische Kunst in Berlin
+                            </h4>
+                            <p class="mb-0">
+                                Die zeitgenössische Kunstszene in Berlin wächst
+                                weiter. Mit Ausstellungen aufstrebender und
+                                etablierter Künstler in den wichtigsten Galerien
+                                der Stadt erlebt die Kunst in Berlin eine neue
+                                Blütezeit. Entdecken Sie die neuesten
+                                Entwicklungen in der deutschen Kunstwelt.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="testimonial-item border p-4">
+                        <div class="d-flex align-items-center">
+                            <img src="img/news-item-2.jpg" alt="" />
+                        </div>
+                        <div class="border-top mt-4 pt-3">
+                            <h4 class="text-secondary">
+                                Deutsche Erfolge im internationalen Sport
+                            </h4>
+                            <p class="mb-0">
+                                Die deutsche Delegation überzeugt erneut auf
+                                internationaler Bühne mit Erfolgen in
+                                Disziplinen wie Leichtathletik, Fußball und
+                                Radsport. Erfahren Sie mehr über die
+                                spannendsten Momente und Erfolge, die
+                                Deutschland als Sportnation weiter stärken.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="testimonial-item border p-4">
+                        <div class="d-flex align-items-center">
+                            <img src="img/news-item-3.jpg" alt="" />
+                        </div>
+                        <div class="border-top mt-4 pt-3">
+                            <h4 class="text-secondary">
+                                Die Entwicklung der deutschen Kulturszene
+                            </h4>
+
+                            <p class="mb-0">
+                                Die deutsche Kulturlandschaft verändert sich
+                                stetig und bietet Raum für innovative Konzepte
+                                und kreative Entwicklungen. Von traditionellen
+                                Veranstaltungen bis zu modernen Fusionen –
+                                bleiben Sie auf dem Laufenden über aktuelle
+                                Trends und spannende Projekte.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="testimonial-item border p-4">
+                        <div class="d-flex align-items-center">
+                            <img src="img/news-item-4.jpg" alt="" />
+                        </div>
+                        <div class="border-top mt-4 pt-3">
+                            <h4 class="text-secondary">
+                                Die deutsche Filmindustrie auf Erfolgskurs
+                            </h4>
+
+                            <p class="mb-0">
+                                Die deutsche Filmindustrie begeistert weiterhin
+                                mit einer Mischung aus Arthouse-Kino und großen
+                                Produktionen. Entdecken Sie die neuesten
+                                Filmprojekte, die national und international für
+                                Aufsehen sorgen.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- NEWS End -->
+
+        <!-- Contact Start -->
+        <div class="container-fluid py-5 mt-5">
+            <div class="container py-5">
+                <div
+                    class="text-center mx-auto pb-5 wow fadeIn"
+                    data-wow-delay=".3s"
+                    style="max-width: 600px"
+                >
+                    <h5 class="text-primary">Kontaktieren Sie uns</h5>
+                    <h1 class="mb-3">Kontaktieren Sie uns für Anfragen</h1>
+                </div>
+                <div class="contact-detail position-relative">
+                    <form action="thanks.html" method="GET">
+                        <div class="row g-3 p-5 rounded contact-form">
+                            <div class="col-md-6 col-lg-6">
+                                <input
+                                    type="text"
+                                    class="form-control border-0 py-3"
+                                    placeholder="Ihr Vorname"
+                                    required
+                                />
+                            </div>
+                            <div class="col-md-6 col-lg-6">
+                                <input
+                                    type="text"
+                                    class="form-control border-0 py-3"
+                                    placeholder="Ihr Nachname"
+                                    required
+                                />
+                            </div>
+                            <div class="col-md-6 col-lg-6">
+                                <input
+                                    type="email"
+                                    class="form-control border-0 py-3"
+                                    placeholder="Ihre E-Mail-Adresse"
+                                    id="email"
+                                    required
+                                />
+                            </div>
+                            <div class="col-md-6 col-lg-6">
+                                <select
+                                    name="Art der Anfrage"
+                                    aria-valuemax="Art der Anfrage"
+                                    id=""
+                                    required
+                                >
+                                    <option value="sport">Sport</option>
+                                    <option value="kunst">Kunst</option>
+                                    <option value="kultur">Kultur</option>
+                                </select>
+                            </div>
+                            <div>
+                                <input
+                                    required
+                                    style="width: 100% !important"
+                                    type="text"
+                                    inputmode="numeric"
+                                    pattern="^[0-9]+$"
+                                    class="form-control"
+                                    id="phone"
+                                    placeholder="Telefonnummer"
+                                />
+                            </div>
+                            <div>
+                                <textarea
+                                    class="w-100 form-control border-0 py-3"
+                                    rows="6"
+                                    cols="10"
+                                    placeholder="Nachricht"
+                                    required
+                                ></textarea>
+                            </div>
+                            <div class="text-start">
+                                <button
+                                    class="btn bg-primary text-white py-3 px-5"
+                                    type="submit"
+                                    id="submit"
+                                >
+                                    Nachricht senden
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- Contact End -->
+
+        <!-- Footer Start -->
+        <div
+            class="container-fluid footer bg-dark wow fadeIn"
+            data-wow-delay=".3s"
+        >
+            <div class="container pt-5 pb-4">
+                <div class="row g-5">
+                    <div class="col-lg-4 col-md-6">
+                        <a href="index.html">
+                            <h1 class="text-white fw-bold d-block">
+                                SzeneMagazin
+                            </h1>
+                        </a>
+                        <p class="mt-4 text-light">
+                            Im Mittelpunkt unserer Mission steht das Engagement,
+                            die besten Nachrichten und Analysen im Bereich der
+                            Kunst, des Sports und der Kultur in Deutschland
+                            anzubieten. Unsere Website ist darauf ausgelegt, dir
+                            vollständige Artikel, Experteneinsichten und
+                            innovative Lösungen im Zusammenhang mit der
+                            deutschen Kultur zu bieten.
+                        </p>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <a href="#" class="h3 text-white">Hilfe-Links</a>
+                        <div class="mt-4 d-flex flex-column help-link">
+                            <a href="index.html" class="mb-2 text-white">
+                                <i
+                                    class="fas fa-angle-right text-secondary me-2"
+                                ></i
+                                >Startseite
+                            </a>
+                            <a
+                                href="privacy-policy.html"
+                                class="mb-2 text-white"
+                            >
+                                <i
+                                    class="fas fa-angle-right text-secondary me-2"
+                                ></i
+                                >Datenschutz
+                            </a>
+                            <a
+                                href="cookie-policy.html"
+                                class="mb-2 text-white"
+                            >
+                                <i
+                                    class="fas fa-angle-right text-secondary me-2"
+                                ></i
+                                >Cookie-Richtlinie
+                            </a>
+                            <a href="disclaimer.html" class="mb-2 text-white">
+                                <i
+                                    class="fas fa-angle-right text-secondary me-2"
+                                ></i
+                                >Haftungsausschluss
+                            </a>
+                            <a
+                                href="business-model.html"
+                                class="mb-2 text-white"
+                            >
+                                <i
+                                    class="fas fa-angle-right text-secondary me-2"
+                                ></i
+                                >Geschäftsmodell
+                            </a>
+                            <a href="terms-of-use.html" class="mb-2 text-white">
+                                <i
+                                    class="fas fa-angle-right text-secondary me-2"
+                                ></i
+                                >Nutzungsbedingungen
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <a href="#" class="h3 text-white">Kontaktiere uns</a>
+                        <div
+                            class="text-white mt-4 d-flex flex-column contact-link"
+                        >
+                            <a
+                                href="#"
+                                class="pb-3 text-light border-bottom border-primary"
+                            >
+                                <i
+                                    class="fas fa-map-marker-alt text-secondary me-2"
+                                ></i
+                                >Kantstraße 23, 10623 Berlin, Deutschland
+                            </a>
+                            <a
+                                href="#"
+                                class="py-3 text-light border-bottom border-primary"
+                            >
+                                <i
+                                    class="fas fa-phone-alt text-secondary me-2"
+                                ></i
+                                >+493081016030
+                            </a>
+                            <a
+                                href="#"
+                                class="py-3 text-light border-bottom border-primary"
+                            >
+                                <i
+                                    class="fas fa-envelope text-secondary me-2"
+                                ></i
+                                >szene_magazin@gmail.com
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        <!-- Cookie banner -->
+        <div class="cookie-wrapper show">
+            <div>
+                <i class="bx bx-cookie"></i>
+                <h2 style="text-align: center">Cookie-Zustimmung</h2>
+            </div>
+
+            <div class="data">
+                <p>
+                    Diese Website verwendet
+                    <a href="privacy-policy.html">Datenschutzrichtlinien</a>
+                    , um dir ein besseres Surferlebnis zu bieten, das auf
+                    Nachrichten zu Kunst, Sport und Kultur in Deutschland
+                    ausgerichtet ist. Weitere Details findest du in unserer
+                    <a href="cookie-policy.html">Cookie-Richtlinie</a>.
+                </p>
+            </div>
+
+            <div class="buttons">
+                <button class="cookie-button" id="acceptBtn">
+                    Akzeptieren
+                </button>
+                <button class="cookie-button" id="declineBtn">Ablehnen</button>
+            </div>
+        </div>
+        <!-- End Cookie banner -->
+
+        <!-- Back to Top -->
+        <a
+            href="#"
+            class="btn btn-secondary btn-square rounded-circle back-to-top"
+            ><i class="fa fa-arrow-up text-white"></i
+        ></a>
+
+        <!-- JavaScript Libraries -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+
+        <script src="js/cookiebanner.js"></script>
+        <script>
+            const input = document.querySelector('#phone');
+            window.intlTelInput(input, {
+                loadUtils: () =>
+                    import(
+                        'https://cdn.jsdelivr.net/npm/intl-tel-input@25.2.0/build/js/utils.js'
+                    ),
+            });
+        </script>
+    </body>
+</html>
